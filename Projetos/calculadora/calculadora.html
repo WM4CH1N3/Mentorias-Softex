@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css"> 
+    <title>Calculadora</title>
+</head>
+<body>
+    <style>
+       body {
+         background-image: linear-gradient(to right, #0A090B,#2C2A30);
+        }
+     </style>
+    <div id="background">
+        <div id="container-left">
+            <div id="campoLogo">
+                <img id="logo" src="img/softex-logo02.png">
+            </div>
+            <div id="text">
+                <h1 id="h1">Calculadora</h1>
+            </div>
+            <div id="codar">
+                <h1 id="h3">#BolsaFuturo</h1>
+                <h1 id="h3">#FrontEnd</h1>
+            </div>
+        </div>
+        <div id="container-right">
+            <div id="calculadora">
+                <div id="painel">
+                    <div class="display calculo" id="display">
+                        <h2 id="font-calculo"></h2>
+                    </div>
+                    <div class="display resultado" id="display">
+                        <h2 id="font-resultado">= 2</h2>
+                    </div>
+                </div>
+                <div id="container-botoes">
+                    <div id="column">
+                        <div class="button CE">CE</div>
+                        <div class="button num" onclick="inputnumero('7')">7</div>
+                        <div class="button num" onclick="inputnumero('4')">4</div>
+                        <div class="button num" onclick="inputnumero('1')">1</div>
+                        <div class="button num">Raiz</div>
+                    </div>
+                    <div id="column">
+                        <div class="button num" onclick="inputNull('')">C</div>
+                        <div class="button num" onclick="inputnumero('8')">8</div>
+                        <div class="button num" onclick="inputnumero('5')">5</div>
+                        <div class="button num" onclick="inputnumero('2')">2</div>
+                        <div class="button num" onclick="inputnumero('0')">0</div>
+                    </div>
+                    <div id="column">
+                        <div class="button num">%</div>
+                        <div class="button num" onclick="inputnumero('9')">9</div>
+                        <div class="button num" onclick="inputnumero('6')">6</div>
+                        <div class="button num" onclick="inputnumero('3')">3</div>
+                        <div class="button num" onclick="inputOperador(',')">,</div>
+                    </div>
+                    <div id="column">
+                        <div class="button OP" onclick="inputOperador('/')">Div</div>
+                        <div class="button OP" onclick="inputOperador('x')">X</div>
+                        <div class="button OP" onclick="inputOperador('-')">---</div>
+                        <div class="button OP" onclick="inputOperador('+')">+</div>
+                        <div class="button OP1">=</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
