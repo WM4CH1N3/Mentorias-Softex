@@ -1,0 +1,43 @@
+.logo{
+    margin-top: 10px;
+    width: 100px;
+    position:absolute;
+}
+body{
+    background-image: linear-gradient(270deg, black, rgb(51, 48, 48));
+    background-color: rgb(56, 55, 55);
+}
+.font{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(255, 255, 255);
+}
+.font.header{
+    margin-top: 50px;
+}
+.font.titulo{
+    text-align: center;
+    font-size: 0.8cm;
+}
+.font.menu{
+    color: rgb(255, 187, 0);
+}
+.font.itens{
+    color: rgb(250, 224, 106);
+    font-size: 0.5cm;
+}
+
+main{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    background-image:linear-gradient(to left, rgb(190, 93, 14), rgb(240, 217, 8));
+    color: rgb(250, 250, 250);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}

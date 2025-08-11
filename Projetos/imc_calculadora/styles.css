@@ -1,0 +1,79 @@
+#h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: aliceblue;
+    text-align:center;
+    font-size: 4ch;
+}
+
+#h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(0, 0, 0);
+    text-align:center;
+    font-size: 2ch;
+}
+
+#background{
+    background-image: linear-gradient(to right,#ae98c6,#e788b4,#edb077);
+    height: 620px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tela{
+    background-color: rgb(255, 255, 255);
+    height: 400px;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    border:15cm;
+    border-radius: 2ch;
+    box-shadow: 0cm 0cm 1cm 0cm
+}
+
+#titulo{
+    background-image: linear-gradient(to right,#ae98c6,#e788b4,#edb077);
+    height: 20%;
+    width: 100%;
+    border-radius: 2ch;
+}
+
+#info{
+    background-color: rgb(255, 255, 255);
+    height: 80%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 2ch;
+    justify-content: space-around;
+}
+
+#campoAltura{
+    background-color: #e9e9e9;
+    width: 70%;
+    height: 40px;
+    border-radius: 1.4ch;
+    border-color: #e21515;
+    margin-top: 10%;
+}
+
+#campoPeso{
+    background-color: #e9e9e9;
+    width: 70%;
+    height: 40px;
+    border-radius: 1.4ch;
+    margin-bottom: 10%;
+}
+
+#botao{
+    background-image: linear-gradient(to right,#ae98c6,#e788b4);
+    width: 40%;
+    height: 40px;
+    border-radius: 1.4ch;
+    margin-bottom: 10%;
+}

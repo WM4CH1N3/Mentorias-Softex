@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css" /> 
+    <title>Document</title>
+</head>
+<body>
+    <style>
+       body {
+         background-image: linear-gradient(to right, #ff9305,#8b4a00);
+        }
+     </style>
+    <div class="container">
+        <div>
+            <img id="logo" src="img/softex-logo01.png">
+            <h1 id="h1">Exercícios</h1>
+        </div>
+        <div class="container botoes">
+            <button class="botao formul" onclick="formulario('')"> Fale sobre você! </button>
+            <button class="botao soma" onclick="soma('')"> Some números! </button>
+            <button class="botao gorjeta" onclick="gorjeta('')"> Calcule a gorjeta! </button>
+        </div>
+    </div>
+    
+
+    <script>
+    // Stript para popup
+        function formulario(){
+            let nome = prompt("Qual seu nome?")
+            let idade = prompt("Qual sua idade?")
+            alert ("Seu nome é: "+nome+"\nE sua idade é: "+idade+" anos")
+        }
+        function soma(){
+            let numA = parseInt(prompt("Digite um número:"));
+            let numB = parseInt(prompt("Digite outro número:"));
+            if (isNaN(numA) || isNaN(numB)) {
+                alert("Por favor, insira números válidos.");
+                return soma();
+            }
+            return alert ("O somatório dos números "+numA+" e "+numB+"\né igual a: "+(numA+numB));
+        }
+        function gorjeta(){
+            let valor = parseInt(prompt("Qual o valor da conta?"));
+            let total = valor+(valor/10);
+            alert( "Valor da conta: R$ "+valor+
+                    "\nGorjeta de 10% do garçom: R$ "+(valor/10)+
+                    "\n----------------------------------"+
+                    "\nTotal a pagar: R$"+total)
+
+        }
+        
+    </script>
+</body>
+</html>

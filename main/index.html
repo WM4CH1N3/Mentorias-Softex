@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="#index"><img src="./img/softex-logo02.svg" class="logo softex"></a>
+            </div>
+        <!--<div class="tema">
+                <input type="checkbox" name="checkbox" id="checkbox">
+                <label for="checkbox" class="label">
+                    <div class="box"></div>
+                </label>
+            </div>  -->
+        </div>
+    </header>
+
+    <div class="container principal">
+        <div class="titulo exibicao">
+            <h1>GALERIA</h1>
+            <div class="container galeria" >
+                <button class="botao aula" onclick="alternarExibicaoAulas()"><h1>Aulas</h1></button>
+                <div id="container"></div>
+                <button class="botao projetos" onclick="alternarExibicaoProjetos()"><h1>Projetos</h1></button>
+            </div>
+        </div>
+        <div id="aulas-grid" class="escondido">
+            <div class="grid um">
+            
+            </div>
+            <div class="grid dois"></div>
+            <div class="grid tres"></div>
+        </div>
+         <div id="projetos-grid" class="escondido">
+            <div class="grid quatro"></div>
+            <div class="grid cinco"></div>
+            <div class="grid seis"></div>
+        </div>
+    </div>
+
+<script>
+function alternarExibicaoProjetos() {
+  const div = document.getElementById("projetos-grid");
+  if (div.classList.contains("mostrando")) {
+    div.classList.remove("mostrando");
+    div.classList.add("escondido");
+  } else {
+    div.classList.remove("escondido");
+    div.classList.add("mostrando");
+  }
+}
+function alternarExibicaoAulas() {
+  const div = document.getElementById("aulas-grid");
+  if (div.classList.contains("mostrando")) {
+    div.classList.remove("mostrando");
+    div.classList.add("escondido");
+  } else {
+    div.classList.remove("escondido");
+    div.classList.add("mostrando");
+  }
+}
+</script>
+
+</body>
+</html>
