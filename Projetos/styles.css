@@ -1,0 +1,147 @@
+
+header{
+    width: 100%;
+    height: 45px;
+    top: 0; /* Mantem o header fixo*/
+    background-color: rgb(31, 31, 31);
+    position: absolute;
+    z-index: 100; /*determina quais elementos aparecem na frente ou atrás de outros quando se sobrepõem*/
+    margin: 0px;
+    padding: 0px;
+}
+header::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 0.2rem;
+    background-image: linear-gradient(90deg, #000000 0%, #000000 92.32%);
+}
+
+body{
+    background-color: #E32E2F; /* Para navegadores que não oferecem suport gradients */
+    background-image: linear-gradient(135deg, #E32E2F, #FFF845);
+}
+
+.logo.softex{
+    width: 100px;
+    margin-top: 5px;
+}
+
+.logo{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: row;
+}
+
+.titulo{
+    color:aliceblue;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.container.principal{
+    width: 100%;
+    margin-top: 100px;
+    position:absolute;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.container.galeria{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.botao{
+    background-image: linear-gradient(270deg, #e3702e, #eea443);
+    background-color: #E32E2F;
+    color: aliceblue;
+    border-radius: 3cm;
+    border-color: aliceblue;
+    border-style: solid;
+    width: 200px;
+    height: 50px;
+    display:flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.botao:hover{
+    background-image: linear-gradient(270deg, #bb612d, #c78b3c);
+    background-color: #b42f2f;
+    color: aliceblue;
+    border-radius: 3cm;
+    border-color: aliceblue;
+    border-style: solid;
+    width: 200px;
+    height: 50px;
+    display:flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+
+.escondido {
+  display: none;
+}
+.mostrando {
+  display: block;
+}
+
+#aulas-grid{
+    width: 100%;
+    height: 300px;
+    background-color: #000000;
+}
+
+#projetos-grid{
+    width: 100%;
+    height: 300px;
+    background-color: #ffffff;
+}
+
+.grid.um{
+    width: 100px;
+    height: 100px;
+    background-color: #ff0c0c;
+}
+
+.grid.dois{
+    width: 100px;
+    height: 100px;
+    background-color: #ffffff;
+}
+
+.grid.tres{
+    width: 100px;
+    height: 100px;
+    background-color: #0099ff;
+}
+
+.grid.quatro{
+    width: 100px;
+    height: 100px;
+    background-color: #14ff0c;
+}
+
+.grid.cinco{
+    width: 100px;
+    height: 100px;
+    background-color: #ff02dd;
+}
+
+.grid.seis{
+    width: 100px;
+    height: 100px;
+    background-color: #321c80;
+}
