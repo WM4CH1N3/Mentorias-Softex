@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula-03</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+</head>
+
+<body>
+
+    <header>
+        <img class="logo" src="./img/softex-logo01.svg">
+        <h1 class="font header">Exercício Prático</h1>
+
+    </header>
+<main>
+     <div>
+        <p class="font titulo geral"> CONTEÚDO</p>
+        <p class="font titulo">Tags semanticas, Agrupamentos, Multimidia, Formularios, Botões, Tabelas</p>
+        <nav>
+            <h1 class="font menu">Menu de Navegação</h1>
+            <ul>
+                <li><a class="font itens" href="#semanticas"> Semanticas</a></li>
+                <li><a class="font itens" href="#agrupamentos"> Agrupamentos</a></li>
+                <li><a class="font itens" href="#multimidia"> Multimídia</a></li>
+                <li><a class="font itens" href="#formulario"> Formulários</a></li>
+                <li><a class="font itens" href="#botoes"> Botões</a></li>
+                <li><a class="font itens" href="#tabelas"> Tabelas</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <section id="semanticas">
+        <h2 class="font titulo2"> Layout Semantico e Agrupamentos</h2>
+        <p class="font"> As tagas semanticas ajudam a organizar e descrever o conteúdo</p>
+        <section class="font">
+                <h2 class="font titulo2">Exemplo Agrupamento</h2>
+                <p>Um <code>fieldset</code> é útil para agrupar controles relacionados dentro do </p>
+                <fieldset>
+                    <strong> Dados de exemplo</strong>
+                    <p>Nome <strong>Mateus</strong></p>
+                    <p>Email <strong>mateus.lrg@gmail.com</strong></p>
+                </fieldset>
+        </section>
+    </section>
+<article class="font">
+    <h2 class="font titulo2">Multimidia</h2>
+    <audio controls>
+        <source src="./audio/decida.mp3" type="">
+    </audio>
+</article>
+    <br>
+    <br>
+    <fieldset id="formulario">
+        <h1 class="font formulario">Formulário</h1>
+
+        <form action="#" method="post">
+            <label class=font for="nome">Nome</label>
+            <input type="text" id="nome"
+            placeholder="Nome Completo" required>
+        </form>
+        <br>
+        <form action="#" method="post">
+            <label class=font for="senha">Senha</label>
+            <input type="text" id="senha"
+            placeholder="*********" required>
+        </form>
+        <br>
+        <form action="#" method="post">
+            <label class=font for="nascimento">Data de Nascimento</label>
+            <input type="text" id="nascimento"
+            placeholder="Data de Nascimento" required>
+        </form>
+        <br>
+        <form action="#" method="post">
+            <label class=font for="curso">Curso</label>
+            <select id="curso" name="curso">
+                <option value=""> -- selecione --</option> 
+                <option value="web">Desenvolvimento web</option>
+                <option value="front">Desenvolvedor Front-End</option>
+                <option value="back">Desenvolver Back-End</option>
+            </select required>
+        </form>
+        <button class="botao"> ENVIAR </button>
+        <br>
+    </fieldset>
+    <div class="font tabela">
+        
+            <h2>Tabela</h2>
+        <table class="tabela" border="1px">
+            <caption> Alunos e notas - Exemplo</caption>
+                <thead>
+                    <th>id</th>
+                    <th>nome</th>
+                    <th>nota</th>
+                    <th>situação</th>
+                </thead>
+                <tbody>
+                    <td> 1 </td>
+                    <td> ana</td>
+                    <td>7.5</td>
+                    <td>aprovado</td>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">media geral</td>
+                        <td>7.83</td>
+                    </tr>
+                </tfoot>
+        </table>
+        <br>
+        <br>
+
+              <table class="tabela" border="1px">
+            <caption> <thead><th class="th produto" colspan="3"> Tabela Produtos </th></thead> </caption>
+                <thead>
+                    <th>Produto</th>
+                    <th>Preço</th>
+                    <th>Quantidade</th>
+                </thead>
+                <tbody>
+                    <td> Teclado </td>
+                    <td> R$ 50</td>
+                    <td> 7</td>
+                </tbody>
+                <tbody>
+                    <td> Mouse </td>
+                    <td> R$ 70</td>
+                    <td>3</td>
+                </tbody>
+                <tbody>
+                    <td> Monitor </td>
+                    <td> R$ 350</td>
+                    <td>2</td>
+                </tbody>
+                <tfoot >
+                    <tr class="tr total">
+                        <td class="tr total" colspan="">TOTAL</td>
+                        <td class="tr total">R$ 470</td>
+                        <td class="tr total">qt Total= 12</td>
+                    </tr>
+                </tfoot>
+        </table>
+        
+    </div>
+    
+
+</main>
+   
+
+</body>
+</html>

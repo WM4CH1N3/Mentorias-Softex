@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .font{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: 1000;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <fieldset id="formulario">
+        <h1 class="font">Formulário</h1>
+
+        <form action="#" method="post">
+            <label class="font" for="nome">Nome:</label>
+            <input type="text" placeholder="Nome Sobrenome" required>
+        </form>
+        <br>
+        <form action="#" method="post">
+            <label class="font" for="email">Email:</label>
+            <input type="text" placeholder="exemplo@email.com" required>
+        </form>
+        <br>
+        <form action="#" method="post">
+            <label class="font" for="nascimento">Idade:</label>
+            <input type="number" placeholder="idade" required>
+        </form>
+        <br>
+        <form action="#" method="post">
+            <label class="font" for="nascimento">Gênero:</label>
+            <label for="op1">Masculino</label>
+            <input type="radio" id="op1" name="genero" value="valor1">
+            <label for="op2">Feminino</label>
+            <input type="radio" id="op2" name="genero" value="valor2">
+            <label for="op3">Non-Binary</label>
+            <input type="radio" id="op3" name="genero" value="valor3">
+        </form>
+        <br>
+        <form action="#" method="post">
+            <label class="font" for="interesses">Interesses:</label>
+            <label for="op1">Front-End</label>
+            <input type="checkbox" required>
+            <label for="op1">Back-End</label>
+            <input type="checkbox" required>
+            <label for="op1">Design</label>
+            <input type="checkbox" required>
+            <label for="op1">Cyber-security</label>
+            <input type="checkbox" required>
+        </form>
+        <br>
+        <form action="#" method="post">
+            <label class="font" for="curso">Curso:</label>
+            <select id="curso" name="curso">
+                <option value=""> -- selecione --</option> 
+                <option value="web">Desenvolvimento web</option>
+                <option value="front">Desenvolvedor Front-End</option>
+                <option value="back">Desenvolver Back-End</option>
+            </select required>
+        </form>
+        <br>
+        <button class="botao"> ENVIAR </button>
+        <br>
+    </fieldset>
+    </main>
+    
+</body>
+</html>

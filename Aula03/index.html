@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Atividade</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="./img/softex-logo01.svg">
+        <a class="font header" href="#tabela"> Tabela</a>
+        <a class="font header" href="#formulario"> Formulário</a>
+        <a class="font header" href="#sobre"> Sobre</a>
+    </header>
+
+    <main>
+        <div class="banner">
+            <div class="titulo">
+                <br>
+                <h1 class="font titulo1">Code Score</h1>
+                <h1 class="font titulo2">Front-end</h1>
+                <h2 class="font subtitulo">Sistema de registro e análise de notas estudantil.
+                    <br>Desempenho individual no curso de Front-end.
+                </h2>
+                <button class="botao notas" href="#tabela">ver notas</button>
+            </div>
+            <div id="img-banner"> <img class="img banner" src="./img/img-banner.png"></div>
+        </div>
+        <br>
+        <div id="container-tabela">
+             <div id="tabela-notas">
+                <table class="tabela" border="1">
+                    <caption id="tabela" class="font titulo3"> Tabela de Notas</caption>
+                    <thead>
+                        <th> </th>
+                        <th>NOME</th>
+                        <th>CURSO</th>
+                        <th>NOTA</th>
+                        <th>SITUAÇÃO</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Mateus Lira Guimarães</td>
+                            <td>Front-end</td>
+                            <td>8,5</td>
+                            <td>Aprovado</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">MÉDIA GERAL DA TURMA</td>
+                            <td>8,2</td>
+                            <td> *Nota de corte: 7,0</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            <div id="registrar-nota">
+                <h1 class="font titulo3">Registrar Notas</h1>
+                <h2 class="font subtitulo2">Adcione um aluno à tabela</h2>
+                <button class="botao notas" href="#formulario">formulário</button>
+            </div>
+        </div>
+        <br>
+        
+        
+    </main>
+
+    <footer></footer>
+</body>
+</html>
