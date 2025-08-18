@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        align-items: center;
+        text-align: center;
+    }
+    .botao{
+        width: 80px;
+        height: 30px;
+        background-color: chocolate;
+        color: aliceblue;
+        font-size: 0.5cm;
+        border:0cm;
+        border-radius: 3cm;
+    }
+</style>
+<body>
+
+    <h1>1. Comparar Idade</h1>
+    <button onclick="verificarIdade()" class="botao">Click!</button>
+    <p id="textoIdade"> </p>
+    <br>
+
+    <h1>2. Número Positivo ou Negativo</h1>
+    <button onclick="verificarPositivo()" class="botao">Click!</button>
+    <p id="textoPositivo"> </p>
+    <br>
+
+    <h1>3. Par ou ímpar</h1>
+    <button onclick="verificarPar()" class="botao">Click!</button>
+    <p id="textoPar"> </p>
+    <br>
+
+    <h1>4. Nota do aluno</h1>
+    <button onclick="verificarNota()" class="botao">Click!</button>
+    <p id="textoNota"> </p>
+    <br>
+
+    <h1>5. Senha secreta</h1>
+    <button onclick="verificarSenha()" class="botao">Click!</button>
+    <p id="textoSenha"> </p>
+    <br>
+
+     <h1>6. Desconto na compra</h1>
+    <button onclick="verificarDesconto()" class="botao">Click!</button>
+    <p id="textoDesconto"> </p>
+    <br>
+
+    <h1>7. Maior de dois números</h1>
+    <button onclick="verificarMaior()" class="botao">Click!</button>
+    <p id="textoMaior"> </p>
+    <br>
+
+    <h1>8. Temperatura</h1>
+    <button onclick="verificarTemperatura()" class="botao">Click!</button>
+    <p id="textoTemperatura"> </p>
+    <br>
+
+    <h1>9. Login simples</h1>
+    <button onclick="verificarLogin()" class="botao">Click!</button>
+    <p id="textoLogin"> </p>
+    <br>
+
+    <h1>10. Lâmpada</h1>
+    <button onclick="verificarLampada()" class="botao">Click!</button>
+    <p id="textoLampada"> </p>
+    <br><br>
+
+    <script>
+        function verificarIdade(){
+            let texto = document.getElementById("textoIdade");
+            var idade = Number(prompt("Digite a sua idade: "));
+            if(idade>=18){
+                texto.innerHTML = "Você tem "+idade+" anos e já é maior de idade.";
+            }else{
+                texto.innerHTML ="Você ainda é menor de idade";
+            }
+        }
+
+        function verificarPositivo(){
+            let texto = document.getElementById("textoPositivo");
+            var numero = Number(prompt("Digite um número: "));
+            if(numero>=0){
+                texto.innerHTML ="O número "+numero+" é positivo."
+            }else{
+                texto.innerHTML ="O número é negativo."
+            }
+        }
+
+        function verificarPar(){
+            let texto = document.getElementById("textoPar");
+            var numero = Number(prompt("Digite um número:"));
+            var resultado = (numero%2);
+            if(resultado==0){
+                texto.innerHTML = "O número "+numero+" é par";
+            }else{
+                texto.innerHTML = "o número "+numero+" é impar";
+            }
+        }
+
+        function verificarNota(){
+            let texto = document.getElementById("textoNota");
+            var nota = Number(prompt("Digite a nota (0-10):"))
+            if(nota>10||nota<0){
+                alert("Nota inválida, digite novamente:");
+                verificarNota();
+            }else{
+                if(nota>=7){
+                    texto.innerHTML = "Com nota "+nota+" você está Aprovado!";
+                }else{
+                    texto.innerHTML = "Com nota "+nota+" você está Reprovado, sinto muito. :(";
+                }
+            }
+        }
+
+        function verificarSenha(){
+            let texto = document.getElementById("textoSenha");
+            var senha = prompt("Digite a senha: ")
+            if(senha==1234){
+                texto.innerHTML = "Senha digitada: "+senha+"<br>Acesso permitido";
+            }else{
+                texto.innerHTML = "Senha digitada: "+senha+"<br>Acesso negado";
+            }
+        }
+
+        function verificarDesconto(){
+            let texto = document.getElementById("textoDesconto");
+            var valor = Number(prompt("Diga o valor da compra:"));
+            if(valor>=100){
+                texto.innerHTML = "Você ganhou desconto!";
+            }else{
+                texto.innerHTML = "Sem desconto.";
+            }
+        }
+
+        function verificarMaior(){
+            let texto = document.getElementById("textoMaior");
+            var numA = Number(prompt("Digite um número: "));
+            var numB = Number(prompt("Digite outro número"));
+            if(numA>numB){
+                texto.innerHTML = "O número "+numA+" é maior que "+numB;
+            }else if(numB>numA){
+                texto.innerHTML = "O número "+numB+" é maior que "+numA;
+            }else{
+                texto.innerHTML = "Os dois números são iguais";
+            }
+        }
+
+        function verificarTemperatura(){
+            let texto = document.getElementById("textoTemperatura");
+            var temp = Number(prompt("Digite a temperatura em Celcius:"))
+            if(temp<=15){
+                texto.innerHTML = "Está frio";
+            }else if(temp>=16){
+                texto.innerHTML = "Está quente";
+            }else{
+                alert("Digite uma temperatura válida")
+            }
+        }
+
+        function verificarLogin(){
+            let texto = document.getElementById("textoLogin");
+            var login = prompt("Digite o login: ")
+            var senha = prompt("Digite a senha: ")
+            if(login=="admin"&&senha==1234){
+                texto.innerHTML = "Login realizado com sucesso";
+            }else{
+                texto.innerHTML = "Usuário ou senha incorretos. Tente novamente";
+            }
+        }
+
+        function verificarLampada(){
+            let texto = document.getElementById("textoLampada");
+            var estado = prompt("Digite o estado da lâmpada:\n(on) para ligado e (off) para desligado")
+            if(estado=="on"||estado=="ON"){
+                texto.innerHTML = "A lâmpada está acesa!";
+            }else if(estado=="off"||estado=="OFF"){
+                texto.innerHTML = "A lâmpada está apagada!";
+            }else{
+                alert("Comando inválido")
+            }
+        }
+
+    </script>
+</body>
+</html>

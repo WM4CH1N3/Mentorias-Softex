@@ -1,0 +1,15 @@
+header{
+    background-color: aqua;
+    height: 70px;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+main{
+    background-color: rgb(255, 223, 182);
+    height: 100%;
+    width: 100%;
+}
+
