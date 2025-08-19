@@ -1,5 +1,10 @@
+body{
+    font-family: "Roboto", sans-serif;
+    color: rgb(120 41 225);
+        position: relative;
+}
 header{
-    background-color: aqua;
+    background-color:#EDEEF9;
     height: 70px;
     width: 100%;
     align-items: center;
@@ -7,9 +12,106 @@ header{
     flex-direction: row;
     text-align: center;
 }
+.logo{
+    margin-left: 15%;
+}
+.carrinho{
+    position: fixed;
+    display: flex;
+    align-items: baseline;
+    margin: 20px;
+    border-radius: 50%;
+    background-color: rgb(150, 65, 230);
+}
+.carrinho.logo{
+    width: 50px;
+    height: 50px;
+    bottom: 0;
+    right: 0;
+    cursor: pointer;
+}
+.popup.carrinho{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 22%;
+    width: 50%;
+    height: 80%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+    justify-content: center;
+    align-items: center;
+}
+.popup{
+    width: 100%;
+    height: 95%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
 main{
-    background-color: rgb(255, 223, 182);
+    background-color:#EDEEF9;
     height: 100%;
     width: 100%;
-}
 
+}
+.texto{
+    margin-left: 15%;
+}
+.banner{
+    width: 100%;
+    background-color: rgb(145, 71, 241);
+    color: #EDEEF9;
+}
+.banner.promo{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.img.banner{
+    width: 300px;
+}
+.produtos{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.coluna{
+    width: 70%;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.produto{
+    background-color: rgb(255, 255, 255);
+    width: 260px;
+    height: 100%;
+    border-radius: 10px;
+    border-color: black;
+}
+.produto:hover{
+    background-color: rgb(255, 255, 255);
+    /*padding: 5px;*/
+    border-radius: 10px;
+    border-color: black;
+    transition: 100ms;
+}
+.imgMed{
+    width: 240px;
+}
+.botao{
+    background-color: rgb(150, 65, 230);
+    color: #EDEEF9;
+    border-radius: 1cm;
+    width: 80px;
+    height: 25px;
+    border-color: #ffffff00;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
