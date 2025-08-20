@@ -1,0 +1,22 @@
+body{
+    background-color: #f7eb4e;
+    font-size: 0.8cm;
+    margin: 50px;
+}
+h1.titulo.um{
+    color: #23395c;
+}
+h1.titulo.dois{
+    color: #5c2357;
+}
+p{
+    color: #3f6d21;
+}
+
+.paragrafo.primeiro{
+    font-size: 0.7cm;
+}
+
+.paragrafo.segundo{
+    font-size: 0.5cm;
+}

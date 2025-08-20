@@ -1,0 +1,16 @@
+.caixa{
+    width: 200px;
+    height: 200px;
+    background-color: grey;
+    border-color: black;
+    border: 5px solid;
+}
+#caixa1{
+    background-color: blue;
+}
+#caixa2{
+    background-color: chartreuse;
+}
+#caixa3{
+    background-color: rgb(201, 31, 31);
+}

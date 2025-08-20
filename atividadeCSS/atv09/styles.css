@@ -1,0 +1,12 @@
+body{
+    background-image:linear-gradient(to right, red, yellow);
+    text-align: center;
+    font-size: 1cm;
+}
+#nome{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: aliceblue;
+}
+.bio{
+    font-family: 'Courier New', Courier, monospace;
+}

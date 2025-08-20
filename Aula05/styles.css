@@ -1,0 +1,53 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #96c5cd;
+    padding: 20px;
+}
+
+/* seletor de classe */
+.listas-tarefas{
+    color: #1d2728;
+    font-weight: bold;
+}
+
+/* Seletor de elemento detro do outro */
+ol.listas-mensagens{
+    color: #aacd96;
+    font-style: italic;
+}
+
+/* Seletor de pseudo-classe*/
+ul.listas-tarefas:hover{
+    color:#667b5a;
+    background-color: #cd9e96;
+    cursor: pointer;
+}
+
+/* seletor de posição  */
+ul.listas-tarefas li:nth-child(2n){
+    color: burlywood;
+    background-color: tomato;
+}
+
+/* seletor de atributo */
+.formulario label{
+    display: inline-block;
+    width: 60px;
+    margin-top: 10px;
+}
+
+/* seletor de atributo */
+.input[type="text"]{
+    border: 1px solid grey;
+    padding: 5px;
+}
+
+/* seletor universal */
+*{
+    box-sizing: border-box;
+    
+}
+
+input:focus{
+    background-color: rgb(237, 247, 146);
+}
