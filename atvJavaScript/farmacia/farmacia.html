@@ -15,18 +15,22 @@
         <img class="logo" src="./img/softexPharm-logo.svg" width="160px">
     </header>
 
-    <div class="popup carrinho" id="popup-carrinho">
-        <div class="popup">
-           <div>
-                <h1>Carrinho de compras</h1>
-                <p>Produtos selecionados</p>
-           </div> 
-           <div class="itens adicionados">
-                <p id="itens-adicionados"></p>
-                <p id="itens-total"></p>
-           </div>
-            <button onclick="finalizarCompra()">confirmar compra</button>
-            <button onclick="fecharPopup()">cancelar compra</button>
+        <div class="popup carrinho" id="popup-carrinho">
+            <div class="popup">
+            <div>
+                    <h1>Carrinho de compras</h1>
+                    <p>Produtos selecionados</p>
+            </div> 
+            <div class="itens adicionados">
+                    <p id="itens-adicionados"></p>
+                </div>
+                    <p id="itens-total"></p>
+            </div>
+            <div class="botoes">
+                <button class="botao popup" onclick="finalizarCompra()">confirmar compra</button>
+                <button class="botao popup" onclick="fecharPopup()">cancelar compra</button>
+            </div>
+                
         </div>
     </div>
 
@@ -52,49 +56,70 @@
             <div class="coluna">
                 <div class="produto" id="produto01"><img src="./img/img-med/med-01.png" class="imgMed">
                     <p class="nomeProduto" id="nomeProduto01">LuftaGastroPro Sachê</p>
-                    <strong>Valor R$</strong><a class="valorProduto" id="valorProduto01"><strong>45,63</strong><br><br></a>
+                    <strong>Valor R$ </strong><a class="valorProduto" id="valorProduto01"><strong>45,63</strong><br><br></a>
                     <input onclick="adicionar('01')" type="button" value="adicionar" class="botao" id="botao01">
                 </div>
                 <div class="produto" id="produto02"><img src="./img/img-med/med-02.png" class="imgMed">
                     <p class="nomeProduto" id="nomeProduto02">Nimesulida 100mg</p>
-                    <p class="valorProduto" id="valorProduto02"><strong>5,79</strong></p>
+                    <strong>Valor R$ </strong><a class="valorProduto" id="valorProduto02"><strong>5,79</strong><br><br></a>
                     <input onclick="adicionar('02')" type="button" value="adicionar" class="botao" id="botao02">
                 </div>
                 <div class="produto" id="produto03"><img src="./img/img-med/med-03.png" class="imgMed">
-                    <p class="nomeProduto">Tadalafila 20mg</p>
-                    <p class="valorProduto" id="valorProduto"><strong>R$ 23,29</strong></p>
-                    <input type="button" value="adicionar" class="botao" id="botao03">
+                    <p class="nomeProduto" id="nomeProduto03">Tadalafila 20mg</p>
+                    <strong>Valor R$ </strong><a class="valorProduto" id="valorProduto03"><strong>23,29</strong><br><br></a>
+                    <input onclick="adicionar('03')" type="button" value="adicionar" class="botao" id="botao03">
                 </div>
             </div>
               <div class="coluna">
                 <div class="produto" id="produto04"><img src="./img/img-med/med-04.png" class="imgMed">
-                    <p class="nomeProduto">Ivermectina 6mg</p>
-                    <p class="valorProduto" id="valorProduto"><strong>R$ 16,19</strong></p></div>
+                    <p class="nomeProduto" id="nomeProduto04">Ivermectina 6mg</p>
+                    <strong>Valor R$ </strong><a class="valorProduto" id="valorProduto04"><strong>16,19</strong><br><br></a>
+                    <input onclick="adicionar('04')" type="button" value="adicionar" class="botao" id="botao04">
+                </div>
                 <div class="produto" id="produto05"><img src="./img/img-med/med-05.png" class="imgMed">
-                    <p class="nomeProduto">Cetoconazol 20mg</p>
-                    <p class="valorProduto" id="valorProduto"><strong>R$ 10,39</strong></p></div>
+                    <p class="nomeProduto" id="nomeProduto05">Cetoconazol 20mg</p>
+                    <strong>Valor R$ </strong><a class="valorProduto" id="valorProduto05"><strong>10,39</strong><br><br></a>
+                    <input onclick="adicionar('05')" type="button" value="adicionar" class="botao" id="botao05">
+                </div>
                 <div class="produto" id="produto06"><img src="./img/img-med/med-06.png" class="imgMed">
-                    <p class="nomeProduto">Losartana potassica 50mg</p>
-                    <p class="valorProduto" id="valorProduto"><strong>R$ 4,29</strong></p></div>
+                    <p class="nomeProduto" id="nomeProduto06">Losartana potassica 50mg</p>
+                    <strong>Valor R$ </strong><a class="valorProduto" id="valorProduto06"><strong>4,29</strong><br><br></a>
+                    <input onclick="adicionar('06')" type="button" value="adicionar" class="botao" id="botao06">
+                </div>
             </div>
             <div class="coluna">
                 <div class="produto" id="produto07"><img src="./img/img-med/med-07.png" class="imgMed">
-                    <p class="nomeProduto">Dipirona monoidratada 500mg</p>
-                    <p class="valorProduto" id="valorProduto"><strong>R$ 12,89</strong></p></div>
+                    <p class="nomeProduto" id="nomeProduto07">Dipirona monoidratada 500mg</p>
+                    <strong>Valor R$ </strong><a class="valorProduto" id="valorProduto07"><strong>12,89</strong><br><br></a>
+                    <input onclick="adicionar('07')" type="button" value="adicionar" class="botao" id="botao07">
+                </div>
                 <div class="produto" id="produto08"><img src="./img/img-med/med-08.png" class="imgMed">
-                    <p class="nomeProduto">Torsilax</p>
-                    <p class="valorProduto" id="valorProduto"><strong>R$ 20,49</strong></p></div>
+                    <p class="nomeProduto" id="nomeProduto08">Torsilax</p>
+                    <strong>Valor R$ </strong><a class="valorProduto" id="valorProduto08"><strong>20,49</strong><br><br></a>
+                    <input onclick="adicionar('08')" type="button" value="adicionar" class="botao" id="botao08">
+                </div>
                 <div class="produto" id="produto09"><img src="./img/img-med/med-09.png" class="imgMed">
-                    <p class="nomeProduto">Simeticona</p>
-                    <p class="valorProduto" id="valorProduto"><strong>R$ 5,45</strong></p></div>
+                    <p class="nomeProduto" id="nomeProduto09">Simeticona</p>
+                    <strong>Valor R$ </strong><a class="valorProduto" id="valorProduto09"><strong>5,45</strong><br><br></a>
+                    <input onclick="adicionar('09')" type="button" value="adicionar" class="botao" id="botao09">
+                </div>
             </div>
             <div class="coluna">
                 <div class="produto" id="produto10"><img src="./img/img-med/med-10.png" class="imgMed">
-                <p class="nomeProduto">Vitamina d3</p><p class="valorProduto" id="valorProduto"><strong>R$ 42,99</strong></p></div>
+                    <p class="nomeProduto" id="nomeProduto10">Vitamina d3</p>
+                    <strong>Valor R$ </strong><a class="valorProduto" id="valorProduto10"><strong>42,99</strong><br><br></a>
+                    <input onclick="adicionar('10')" type="button" value="adicionar" class="botao" id="botao10">
+                </div>
                 <div class="produto" id="produto11"><img src="./img/img-med/med-11.png" class="imgMed">
-                <p class="nomeProduto">Dorflex	</p><p class="valorProduto" id="valorProduto"><strong>R$ 25,99</strong></p></div>
+                    <p class="nomeProduto" id="nomeProduto11">Dorflex</p>
+                    <strong>Valor R$ </strong><a class="valorProduto" id="valorProduto11"><strong>25,99</strong><br><br></a>
+                    <input onclick="adicionar('11')" type="button" value="adicionar" class="botao" id="botao11">
+                </div>
                 <div class="produto" id="produto12"><img src="./img/img-med/med-12.png" class="imgMed">
-                <p class="nomeProduto">Pomada Antiassadura</p><p class="valorProduto" id="valorProduto"><strong>R$ 12,86</strong></p></div>
+                    <p class="nomeProduto" id="nomeProduto12">Pomada Antiassadura</p>
+                    <strong>Valor R$ </strong><a class="valorProduto" id="valorProduto12"><strong>12,86</strong><br><br></a>
+                    <input onclick="adicionar('12')" type="button" value="adicionar" class="botao" id="botao12">
+                </div>
             </div>
 
 
