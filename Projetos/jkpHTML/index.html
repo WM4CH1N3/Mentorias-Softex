@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <script src="./script.js"></script>
+    <title>Jogo Pedra Papel Tesoura</title>
+</head>
+<body>
+    <div id="tela-inicial" class="container inicio">
+        <div>
+            <img src="./imagens/logo-jogo.png" alt="logo-jogo" class="logo jogo">
+        </div>
+        <div class="botoes">
+            <button class="botao" id="botao-jogar" onclick="jogar()">JOGAR</button>
+            <button class="botao" id="botao-recorde">RECORDES</button>
+            <button class="botao" id="botao-sobre">SOBRE</button>
+        </div>
+    </div>
+
+    <div id="tela-jogo" class="container jogo">
+        <button class="botao sair" id="botao-sair" onclick="sair()">SAIR</button>
+        <div>
+            <h1><strong>ROUND </strong><a id="contador-round">02</a></h1>
+            <p class="legenda"><strong>VITORIAS CONSECUTIVAS: </strong><a id="contador-round">07</a></p>
+        </div>
+        <div class="hands">
+            <div class="container jogador">
+                 <p class="legenda">JOGADOR</p>
+                <div id="life" class="container life">
+                    <img src="./imagens/coracao-cheio.png" class="life">
+                    <img src="./imagens/coracao-vazio2.png" class="life">
+                    <img src="./imagens/coracao-vazio2.png" class="life">
+                </div>
+                <img src="./imagens/hand-tesoura-a.png" class="hands img">
+            </div>
+         
+            <p class="cronometro" id="cronometro">3</p>
+            <div class="container jogador">
+                 <p class="legenda">MÁQUINA</p>
+                <div id="life" class="container life">
+                    <div class="life" style="height: 40px;"></div>
+                </div>
+                <img src="./imagens/hand-papel-b.png" class="hands img">
+            </div>
+        </div>
+        <div class="container escolhas">
+            <p class="legenda">ESCOLHA UMA OPÇÃO</p>
+            <button class="botao escolha" id="botao-pedra" onclick="jogar()">PEDRA</button>
+            <button class="botao escolha" id="botao-papel">PAPEL</button>
+            <button class="botao escolha" id="botao-tesoura">TESOURA</button>
+        </div>
+        
+    </div>
+
+</body>
+</html>

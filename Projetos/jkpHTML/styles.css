@@ -1,0 +1,115 @@
+body{
+    background-image: linear-gradient(to right, #ffba08, #faa307);
+    color: #03071e;
+}
+.container{
+    width: 100%;
+    height: 600px;
+    flex-direction: column;
+    justify-content:center;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+.container.inicio{
+    display:flex;
+}
+.container.jogo{
+    display:none;
+    font-size: 0.6cm;
+    margin-top: -30px;
+}
+.logo{
+    width: 400px;
+}
+.botoes{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.botao{
+    background-image: linear-gradient(to right, #dc2f02, #d00000);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #f1faee;
+    width: 160px;
+    height: 50px;
+    cursor: pointer;
+    border: 5px solid;
+    border-color: #03071e;
+    border-radius: 0.3cm;
+    font-size: 0.6cm;
+}
+.botao:hover{
+    background-image: linear-gradient(to right, #c52b04, #990303);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ffffff;
+    width: 160px;
+    height: 50px;
+    cursor: pointer;
+    border: 5px solid;
+    border-color: #03071e;
+    border-radius: 0.3cm;
+    font-size: 0.6cm;
+}
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+.hands{
+    display: flex;
+    width: 800px;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.hands.img{
+    width: 240px;
+}
+.cronometro{
+    display: flex;
+    position:fixed;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 80px;
+    font-size: 2cm;
+}
+.botao.sair{
+    display: flex;
+    position:fixed;
+    align-items: center;
+    justify-content: center;
+    top:0;
+    right: 0;
+    margin-top: 30px;
+    margin-right: 30px;
+    width: 100px;
+    height: 40px;
+    font-size: 0.6cm;
+}
+.container.jogador{
+    margin-top: 110px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container.life{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+}
+.life{
+    width: 40px;
+    margin-bottom: 10px;
+}
+
+.container.escolhas{
+    margin-top: 120px;
+}
