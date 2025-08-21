@@ -1,0 +1,105 @@
+
+.carrinho{
+    position: fixed;
+    display: flex;
+    align-items: baseline;
+    margin: 20px;
+    border-radius: 50%;
+    background-color: rgb(150, 65, 230);
+}
+.carrinho.logo{
+    width: 50px;
+    height: 50px;
+    bottom: 0;
+    right: 0;
+    cursor: pointer;
+}
+.popup.carrinho{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 22%;
+    width: 50%;
+    height: 80%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.popup{
+    width: 100%;
+    height: 95%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    
+}
+.itens.adicionados {
+    max-height: 300px;
+    overflow-y: auto;    /* ativa barra de rolagem vertical */
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    background: #f9f9f9;
+    border-radius: 5px;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.img{
+    width: 240px;
+}
+.coluna{
+    width: max-content;
+    height:min-content;
+    justify-content: space-between;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+.container.produto{
+    padding: 20px;
+}
+a{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+p{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.botao{
+    background-color: rgb(219, 219, 219);
+    padding: 5px;
+    color: rgb(29, 27, 27);
+    font-weight: bolder;
+    cursor: pointer;
+    width: 135PX;
+    height: 35px;
+}
+.destaque{
+    background-color: blueviolet;
+    color: aliceblue;
+    padding: 5px;
+}
+#botao01{
+    display:inline;
+}
+.container.quantidade{
+    width: 40px;
+    height: 25px;
+    display: none;
+    font-size: 0.5cm;
+}
+.quantidade{
+    width: 40px;
+    height: 25px;
+    font-size: 0.5cm;
+}

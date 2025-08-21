@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+    <title>Supermercado</title>
+</head>
+<body>
+    <div class="banner">
+        <img src="./img/banner1.png">
+    </div>
+    <div class="popup carrinho" id="popup-carrinho">
+            <div class="popup">
+            <div>
+                    <h1>Carrinho de compras</h1>
+                    <p>Produtos selecionados</p>
+            </div> 
+            <div class="itens adicionados">
+                    <p id="itens-adicionados"></p>
+                </div>
+                    <p id="itens-total"></p>
+            </div>
+            <div class="botoes">
+                <button class="botao popup" onclick="finalizarCompra()">confirmar compra</button>
+                <button class="botao popup" onclick="fecharPopup()">cancelar compra</button>
+            </div>
+                
+    </div>
+    <div class="carrinho" id="carrinho">
+            <button class="carrinho logo" onclick="carrinho()"><img src="./img/carrinho-logo.svg" class="carrinho logo"></button>
+            
+    </div>
+    <div class="produtos">
+        <div class="coluna">
+            <div class="container produto">
+                <img src="./img/img-produto01.png" class="img produto" id="img-produto01">
+                <p id="nome-produto">Papel Higiênico Personal Vip3</p>
+                <a><strong>R$ </strong></a><a id="preco">24.99</a><br>
+                <div class="destaque">
+                    <a class="destaque">3 uni = 50% OFF</a><br>
+                </div>
+                <input type="button" class="botao comprar" value="ADICIONAR" id="botao01" onclick="adicionar('01')">
+                <div id="qtdContainer01" class="container quantidade">
+                    <input type="number"  value="1" class="quantidade valor" id="qtd01">
+                    <button id="ok" onclick="confirmarQuantidade('01')">OK</button>
+                </div>
+            </div>
+
+            <div class="container produto">
+                <img src="./img/img-produto02.png" class="img produto" id="img-produto02">
+                <p id="nome-produto">Desodorante Aerosol Dove</p>
+                <a><strong>R$ </strong></a><a id="preco">21.51</a><br>
+                <div class="destaque">
+                    <a class="destaque">3 uni = 50% OFF</a><br>
+                </div>
+                <input type="button" class="botao comprar" value="ADICIONAR" id="botao02" onclick="adicionar('02')">
+                <div id="qtdContainer02" class="container quantidade">
+                    <input type="number"  value="1" class="quantidade valor" id="qtd02">
+                    <button id="ok" onclick="confirmarQuantidade('02')">OK</button>
+                </div>
+            </div>
+
+            <div class="container produto">
+                <img src="./img/img-produto03.png" class="img produto" id="img-produto03">
+                <p id="nome-produto">Cotonetes Johnson & Johnson</p>
+                <a><strong>R$ </strong></a><a id="preco">5.99</a><br>
+                <div class="destaque">
+                    <a class="destaque">3 uni = 50% OFF</a><br>
+                </div>
+                <input type="button" class="botao comprar" value="ADICIONAR" id="botao03" onclick="adicionar('03')">
+                <div id="qtdContainer03" class="container quantidade">
+                    <input type="number"  value="1" class="quantidade valor" id="qtd03">
+                    <button id="ok" onclick="confirmarQuantidade('03')">OK</button>
+                </div>
+            </div>
+
+            <div class="container produto">
+                <img src="./img/img-produto04.png" class="img produto" id="img-produto04">
+                <p id="nome-produto">Creme Dental Oral-B</p>
+                <a><strong>R$ </strong></a><a id="preco">16.90</a><br>
+                <div class="destaque">
+                    <a class="destaque">3 uni = 50% OFF</a><br>
+                </div>
+                <input type="button" class="botao comprar" value="ADICIONAR" id="botao04" onclick="adicionar('04')">
+                <div id="qtdContainer04" class="container quantidade">
+                    <input type="number"  value="1" class="quantidade valor" id="qtd04">
+                    <button id="ok" onclick="confirmarQuantidade('04')">OK</button>
+                </div>
+            </div>
+            
+        </div>
+        <div class="coluna">
+            <div class="container produto">
+                <img src="./img/img-produto05.png" class="img produto" id="img-produto05">
+                <p id="nome-produto">Fio Dental Johnson & Johnson</p>
+                <a><strong>R$ </strong></a><a id="preco">14.90</a><br>
+                <div class="destaque">
+                    <a class="destaque">3 uni = 50% OFF</a><br>
+                </div>
+                <input type="button" class="botao comprar" value="ADICIONAR" id="botao05" onclick="adicionar('05')">
+                <div id="qtdContainer05" class="container quantidade">
+                    <input type="number"  value="1" class="quantidade valor" id="qtd05">
+                    <button id="ok" onclick="confirmarQuantidade('05')">OK</button>
+                </div>
+            </div>
+            <div class="container produto">
+                <img src="./img/img-produto06.png" class="img produto" id="img-produto06">
+                <p id="nome-produto">Shampoo Elseve Purê 400ml</p>
+                <a><strong>R$ </strong></a><a id="preco">20.69</a><br>
+                <div class="destaque">
+                    <a class="destaque">3 uni = 50% OFF</a><br>
+                </div>
+                <input type="button" class="botao comprar" value="ADICIONAR" id="botao06" onclick="adicionar('06')">
+                <div id="qtdContainer06" class="container quantidade">
+                    <input type="number"  value="1" class="quantidade valor" id="qtd06">
+                    <button id="ok" onclick="confirmarQuantidade('06')">OK</button>
+                </div>
+            </div>
+            <div class="container produto">
+                <img src="./img/img-produto07.png" class="img produto" id="img-produto07">
+                <p id="nome-produto">Escova de Dentes Infantil 2uni</p>
+                <a><strong>R$ </strong></a><a id="preco">10.39</a><br>
+                <div class="destaque">
+                    <a class="destaque">3 uni = 50% OFF</a><br>
+                </div>
+                <input type="button" class="botao comprar" value="ADICIONAR" id="botao07" onclick="adicionar('07')">
+                <div id="qtdContainer07" class="container quantidade">
+                    <input type="number"  value="1" class="quantidade valor" id="qtd07">
+                    <button id="ok" onclick="confirmarQuantidade('07')">OK</button>
+                </div>
+            </div>
+            <div class="container produto">
+                <img src="./img/img-produto08.png" class="img produto" id="img-produto08">
+                <p id="nome-produto">Absorvente com Abas Intimus</p>
+                <a><strong>R$ </strong></a><a id="preco">15.99</a><br>
+                <div class="destaque">
+                    <a class="destaque">3 uni = 50% OFF</a><br>
+                </div>
+                <input type="button" class="botao comprar" value="ADICIONAR" id="botao08" onclick="adicionar('08')">
+                <div id="qtdContainer08" class="container quantidade">
+                    <input type="number"  value="1" class="quantidade valor" id="qtd08">
+                    <button id="ok" onclick="confirmarQuantidade('08')">OK</button>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+    <div class="banner">
+        <img src="./img/banner2.png">
+    </div>
+</body>
+</html>
