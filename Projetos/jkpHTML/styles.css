@@ -67,6 +67,13 @@ p{
 }
 .hands.img{
     width: 240px;
+    display: none;
+}
+.hands.img.pedraA{
+    display: flex;
+}
+.hands.img.pedraB{
+    display: flex;
 }
 .cronometro{
     display: flex;

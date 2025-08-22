@@ -40,8 +40,12 @@ function carrinho(){
     }
 }
 
-function fecharPopup() {
+function cancelarCompra() {
     document.getElementById("popup-carrinho").style.display = "none";
+    let texto = document.getElementById("itens-adicionados");
+    texto.innerHTML = "";
+    let total= document.getElementById("itens-total");
+    total.innerHTML = "";
 }
 
 function confirmarCompra(){

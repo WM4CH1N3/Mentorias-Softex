@@ -11,10 +11,14 @@
 </head>
 <body>
     <header>
-        <img class="logo" src="./img/softex-logo01.svg">
-        <a class="font header" href="#tabela"> Tabela</a>
-        <a class="font header" href="#formulario"> Formulário</a>
-        <a class="font header" href="#sobre"> Sobre</a>
+        <div>
+            <img class="logo" src="./img/softex-logo01.svg">
+        </div>
+        <div class="headerReferencia">
+            <a class="font header" href="#tabela"> Tabela</a>
+            <a class="font header" href="#formulario"> Formulário</a>
+            <a class="font header" href="#sobre"> Sobre</a>
+        </div>
     </header>
 
     <main>
@@ -26,14 +30,14 @@
                 <h2 class="font subtitulo">Sistema de registro e análise de notas estudantil.
                     <br>Desempenho individual no curso de Front-end.
                 </h2>
-                <button class="botao notas" href="#tabela">ver notas</button>
+                <button class="botao notas" onclick="location.href='#tabela'">ver notas</button>
             </div>
             <div id="img-banner"> <img class="img banner" src="./img/img-banner.png"></div>
         </div>
         <br>
         <div id="container-tabela">
              <div id="tabela-notas">
-                <table class="tabela" border="1">
+                <table class="tabela" border="1px solid">
                     <caption id="tabela" class="font titulo3"> Tabela de Notas</caption>
                     <thead>
                         <th> </th>
@@ -51,6 +55,87 @@
                             <td>Aprovado</td>
                         </tr>
                     </tbody>
+                    <tbody>
+                        <tr>
+                            <td>2</td>
+                            <td>Lucas Andrade Pereira</td>
+                            <td>Front-end</td>
+                            <td>8,5</td>
+                            <td>Aprovado</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>3</td>
+                            <td>Mariana Costa Freitas</td>
+                            <td>Front-end</td>
+                            <td>7.2</td>
+                            <td>Aprovado</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>4</td>
+                            <td>Gabriel Silva Monteiro</td>
+                            <td>Front-end</td>
+                            <td>9.1</td>
+                            <td>Aprovado</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>5</td>
+                            <td>Ana Beatriz Rocha Lima</td>
+                            <td>Front-end</td>
+                            <td>6.8</td>
+                            <td>Reprovado</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>6</td>
+                            <td>João Victor Carvalho Nunes</td>
+                            <td>Front-end</td>
+                            <td>5.4</td>
+                            <td>Reprovado</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>7</td>
+                            <td>Camila Oliveira Duarte</td>
+                            <td>Front-end</td>
+                            <td>9.7</td>
+                            <td>Aprovado</td>
+                        </tr>
+                    <!-- </tbody>
+                    <tbody>
+                        <tr>
+                            <td>8</td>
+                            <td>Rafael Mendes Gonçalves</td>
+                            <td>Front-end</td>
+                            <td>4.9</td>
+                            <td>Reprovado</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>9</td>
+                            <td>Fernanda Alves Moreira</td>
+                            <td>Front-end</td>
+                            <td>8.0</td>
+                            <td>Aprovado</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>10</td>
+                            <td>Pedro Henrique Martins Souza</td>
+                            <td>Front-end</td>
+                            <td>7.6</td>
+                            <td>Aprovado</td>
+                        </tr>
+                    </tbody> -->
                     <tfoot>
                         <tr>
                             <td colspan="3">MÉDIA GERAL DA TURMA</td>
@@ -63,14 +148,78 @@
             <div id="registrar-nota">
                 <h1 class="font titulo3">Registrar Notas</h1>
                 <h2 class="font subtitulo2">Adcione um aluno à tabela</h2>
-                <button class="botao notas" href="#formulario">formulário</button>
+                <button class="botao notas" onclick="location.href='#formulario'">formulário</button>
             </div>
         </div>
-        <br>
-        
+        <br><br>
+
+        <h1 class="font titulo4" id="formulario">Formulário</h1>
+        <div class="formulario">
+            <img src="img/img-formulario.png" class="img-formulario">
+            <div class="forms">
+                <form action="#" method="post" >
+                <fieldset>
+                    <legend>Cadastro de aluno</legend>
+
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" placeholder="Nome completo" required>
+                        <br><br>
+                    <label for="curso">Curso</label>
+                    <input type="text" id="curso" name="curso" placeholder="front-end" required>
+                        <br><br>
+                    <label for="nota">Nota</label>
+                    <input type="number" id="nota" name="nota" placeholder="0,0" required>
+                        <br><br>
+                    <label for="situação">Situação</label>
+                    <select id="situacao" name="situacao">
+                        <option value="">-- selecione --</option>
+                        <option value="aprovado">Aprovado</option>
+                        <option value="reprovado">Reprovado</option>
+                    </select>
+                        <br><br>
+                    <label for="obs">Observações</label>
+                    <textarea id="obs" name="obs" rows="3" placeholder="Observações"></textarea>
+                        <br><br>
+                    <div class="botoes-container">
+                        <button type="submit" class="botao-formulario">Enviar</button>
+                        <button type="reset" class="botao-formulario">Limpar</button>
+                    </div>
+                </fieldset>
+            </form>
+            </div>
+            
+        </div>
         
     </main>
-
-    <footer></footer>
+<br><br>
+    <footer>
+        <div id="footer-logo">
+            <img src="./img/softex-logo02.png" alt="logo" class="logo-footer">
+        </div>
+        <div id="footer-nav">
+            <div>
+                <ul> <a class="titulo-footer">Navegação</a>
+                    <li>Início</li>
+                    <li>Notas</li>
+                    <li>Formulário</li>
+                </ul>
+            </div>
+            <div>
+                <a class="titulo-footer" id="sobre">Sobre</a><br>
+                <a>Sistema intuitivo para registrar, acompanhar e analisar <br>
+                notas e avaliações de alunos em cursos de Front-End,<br>
+                com uma interface clara e moderna.</a>
+            </div>
+        </div>
+        <div id="footer-info">
+            <div>
+                <a>Página feita por: <strog>Mateus Lira Guimarães</strog></a>
+            </div>
+            <div>
+                <a>Curso: <strog>Front-end</strog></a>
+                <a>Turma: <strog>06 PE - C1</strog></a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

@@ -9,9 +9,20 @@ header{
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    justify-content: space-around;
 }
+.headerReferencia{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+}
+
 body{
     background-color: #F9F6F2;
+
 }
 
 .font{
@@ -33,10 +44,16 @@ body{
     font-size: 2cm;
     color: #FF7801;
 }
-
 .font.titulo3{
     font-size: 1cm;
     color:#FF7801;
+    font-weight: bolder;
+}
+.font.titulo4{
+    font-size: 1.1cm;
+    color:#FF7801;
+    font-weight: bolder;
+    text-align: center;
 }
 .font.subtitulo{
     font-size: 0.5cm;
@@ -46,7 +63,6 @@ body{
     font-size: 0.5cm;
     margin-top: -20px;
 }
-
 .banner{
     width: 100%;
     height: 450px;
@@ -71,7 +87,11 @@ body{
     width: 450px;
     height: 300px;
 }
-
+.img-formulario{
+    width: 400px;
+    display: block;    
+    margin:auto;
+}
 .botao{
     background-color: #FF7801;
     width: 150px;
@@ -79,20 +99,103 @@ body{
     border-radius: 3cm;
     color:#F9F6F2;
     font-size: 0.6cm;
+    cursor: pointer;
+}
+.tabela{
+    min-width: 600px;
+    border: 1px solid;
+    border-color: #4D2114;
+    font-family:"Inter", sans-serif;
+    padding: 5px;
+}
+th{
+    background-color: #FF7801;
+    padding: 10px;
+}
+td{
+    padding: 5px;
 }
 #container-tabela{
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    justify-content: space-around;
 }
 #tabela-notas{
     width: 40%;
-    background-color: #f3ba89;
+    background-color: #f3bb8900;
     border-style: solid;
     border-radius: 1cm;
-    border-color: #4D2114;
+    border-color: #4d211400;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.formulario{
+    border: 2px solid;
+    border-radius: 7%;
+    padding: 20px;
+    width: 500px;
+    display: block;    
+    margin:auto;
+    border-color: #FF7801;
+    box-shadow: 20px 10px 0px #FF7801;
+    font-family: "Inter", sans-serif;
+}
+.forms{
+    width: 400px;
+    display: block;    
+    margin:auto;
+}
+.botao-formulario{
+    background-color: #FF7801;
+    width: 100px;
+    height: 40px;
+    border-radius: 3cm;
+    color:#F9F6F2;
+    font-size: 0.6cm;
+    cursor: pointer;
+}
+.botoes-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+ul{
+    list-style: none;
+}
+footer{
+    background-color: #FF7801;
+    font-family: "Inter", sans-serif;
+    color: #F8EEE2;
+    display: flex;
+    flex-direction: column;
+
+}
+.logo-footer{
+    width: 80px;
+}
+#footer-logo{
+    padding: 10px 0px 10px 40px;
+    border: 2px solid;
+}
+#footer-nav{
+    padding: 0px -10px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 130px;
+}
+#footer-info{
+    background-color: #d66706;
+    padding: 10px 0px 10px 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 500px;
+    color: #ffffff;
+}
+.titulo-footer{
+    font-size: 0.6cm;
 }
