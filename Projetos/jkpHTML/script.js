@@ -1,10 +1,24 @@
 // FUNÇÕES DE AUDIO
 function click(){
-    
+    let audio = new Audio("./sounds/buttonClick.mp3");
+    audio.play();
+}
+function perdeu(){
+    let audio = new Audio("./sounds/gameOver.mp3");
+    audio.play();
+}
+function roundWin(){
+    let audio = new Audio("./sounds/roundWin.wav");
+    audio.play();
+}
+function empate(){
+    let audio = new Audio("./sounds/empate.wav");
+    audio.play();
 }
 
 // FUNÇÕES DO JOGO
 function jogar(){
+    click();
     document.getElementById("tela-inicial").style.display="none"
     document.getElementById("tela-jogo").style.display="flex"
 }
@@ -28,6 +42,7 @@ function randomizar(){
 let escolhaJogador = '';
 let escolhaMaquina = '';
 function escolher(mao){
+    click();
 
     let escolha = document.getElementById("botao-" + mao).value;
     document.getElementById("minhaMao").src = "./imagens/"+escolha;
@@ -55,19 +70,40 @@ function comparar(){
     let maquina = escolhaMaquina;
 
     if(jogador=='PEDRA' && maquina =='TESOURA'){
-        alert("Voce ganhou");
+        roundWin();
+        setTimeout(function(){
+            alert("Voce ganhou");   }, 300); 
+        
     }else if(jogador=='TESOURA' && maquina =='PEDRA'){
-        alert("Voce PERDEU");
+        perdeu();
+        setTimeout(function(){
+            alert("Voce PERDEU");   }, 300); 
+        
     }else if(jogador=='PAPEL' && maquina =='PEDRA'){
-        alert("Voce ganhou");
+        roundWin();
+        setTimeout(function(){
+            alert("Voce ganhou");   }, 300); 
+        
     }else if(jogador=='PEDRA' && maquina =='PAPEL'){
-        alert("Voce PERDEU");
+        perdeu();
+        setTimeout(function(){
+            alert("Voce PERDEU");   }, 300); 
+       
     }else if(jogador=='TESOURA' && maquina =='PAPEL'){
-        alert("Voce ganhou");
+        roundWin();
+        setTimeout(function(){
+            alert("Voce ganhou");   }, 300); 
+        
     }else if(jogador=='PAPEL' && maquina =='TESOURA'){
-        alert("Voce PERDEU");
+        perdeu();
+        setTimeout(function(){
+            alert("Voce PERDEU");   }, 300); 
+        
     }else{
-        alert("EMPATE!")
+        empate();
+        setTimeout(function(){
+            alert("EMPATE!")    }, 300); 
+        
     }
 }
 
@@ -77,6 +113,7 @@ function contadorVitoria(){
 }
 
 function sair(){
+    click();
     document.getElementById("tela-inicial").style.display="flex"
     document.getElementById("tela-jogo").style.display="none"
 }
