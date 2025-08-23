@@ -39,6 +39,8 @@ body{
     border-color: #03071e;
     border-radius: 0.3cm;
     font-size: 0.6cm;
+    pointer-events:auto;
+
 }
 .botao:hover{
     background-image: linear-gradient(to right, #c52b04, #990303);

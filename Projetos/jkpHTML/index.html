@@ -33,23 +33,23 @@
                     <img src="./imagens/coracao-vazio2.png" class="life">
                     <img src="./imagens/coracao-vazio2.png" class="life">
                 </div>
-                <img src="./imagens/hand-tesoura-a.png" class="hands img pedraA">
+                <img src="./imagens/hand-tesoura-a.png" class="hands img pedraA" id="minhaMao">
             </div>
          
-            <p class="cronometro" id="cronometro">3</p>
+            <!-- <p class="cronometro" id="cronometro">3</p> -->
             <div class="container jogador">
                  <p class="legenda">MÁQUINA</p>
                 <div id="life" class="container life">
                     <div class="life" style="height: 40px;"></div>
                 </div>
-                <img src="./imagens/hand-papel-b.png" class="hands img pedraB">
+                <img src="./imagens/hand-papel-b.png" class="hands img pedraB" id="maquinaMao">
             </div>
         </div>
         <div class="container escolhas">
             <p class="legenda">ESCOLHA UMA OPÇÃO</p>
-            <button class="botao escolha" id="botao-pedra" onclick="jogar()">PEDRA</button>
-            <button class="botao escolha" id="botao-papel">PAPEL</button>
-            <button class="botao escolha" id="botao-tesoura">TESOURA</button>
+            <button class="botao escolha" id="botao-pedra" value="hand-pedra-a.png" onclick="escolher('pedra')">PEDRA</button>
+            <button class="botao escolha" id="botao-papel" value="hand-papel-a.png" onclick="escolher('papel')">PAPEL</button>
+            <button class="botao escolha" id="botao-tesoura" value="hand-tesoura-a.png" onclick="escolher('tesoura')">TESOURA</button>
         </div>
         
     </div>
