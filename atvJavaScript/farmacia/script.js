@@ -33,9 +33,22 @@ function adicionar(id){
 }
 
 function carrinho(){
-    document.getElementById("popup-carrinho").style.display = "flex";
+    if(document.getElementById("popup-carrinho").style.display == "none"){
+        document.getElementById("popup-carrinho").style.display = "flex"
+    }else{
+        document.getElementById("popup-carrinho").style.display = "none"
+    }
 }
 
-function fecharPopup() {
+function cancelarCompra() {
     document.getElementById("popup-carrinho").style.display = "none";
+    let texto = document.getElementById("itens-adicionados");
+    texto.innerHTML = "";
+    let total= document.getElementById("itens-total");
+    total.innerHTML = "";
+}
+
+function confirmarCompra(){
+    document.getElementById("popup-carrinho").style.display = "none";
+    alert("Compra Finalizada, voce deve pagar: R$ "+totalSoma.toFixed(2))
 }
